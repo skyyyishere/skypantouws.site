@@ -10,30 +10,59 @@
 </head>
 
 <body>
-  <header class="container mx-auto flex justify-start items-center border-b border-gray-300 h-12 py-2">
-    <a href="index.html" class="block">
-      <img src="img/Logo.png" alt="IBM Logo" class="h-16 w-auto px-4 md:h-20">
-    </a>
+  <header class="border-b border-gray-300">
+    <div class="md:hidden flex justify-between items-center px-4 py-2 bg-white">
+      <a href="index.html">
+        <img src="img/Logo.png" alt="IBM Logo" class="h-12 w-auto">
+      </a>
+      <button id="mobile-menu-btn" class="text-gray-600 text-2xl focus:outline-none">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
 
-    <div class="hidden md:block h-6 border-l border-gray-300 mx-1"></div>
+    <div class="hidden md:flex justify-start items-center container mx-auto h-12 py-2">
+      <a href="index.html" class="block">
+        <img src="img/Logo.png" alt="IBM Logo" class="h-16 w-auto md:h-20 px-4">
+      </a>
 
-    <nav class="hidden md:block ml-8">
-      <ul class="flex gap-11">
-        <li><a href="index.html" class="px-2 py-3 hover:bg-gray-100">Home</a></li>
-        <li><a href="biodata.html" class="px-2 py-3 hover:bg-gray-100">About Me</a></li>
-        <li><a href="contact_us.html" class="px-2 py-3 hover:bg-gray-100">Contact Us</a></li>
-        <li><a href="posts.html" class="px-2 py-3 hover:bg-gray-100">Posts</a></li>
-        <li><a href="free_page.html" class="px-2 py-3 hover:bg-gray-100">Free Page</a></li>
+      <div class="hidden md:block h-6 border-l border-gray-300 mx-1"></div>
+
+      <nav class="hidden md:block ml-8">
+        <ul class="flex gap-11">
+          <li><a href="index.html" class="px-2 py-3 hover:bg-gray-100">Home</a></li>
+          <li><a href="biodata.html" class="px-2 py-3 hover:bg-gray-100">About Me</a></li>
+          <li><a href="contact_us.html" class="px-2 py-3 hover:bg-gray-100">Contact Us</a></li>
+          <li><a href="posts.html" class="px-2 py-3 hover:bg-gray-100">Posts</a></li>
+          <li><a href="free_page.html" class="px-2 py-3 hover:bg-gray-100">Free Page</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-8 mx-3 ml-auto text-gray-600 text-xl">
+        <i class="ri-search-line"></i>
+        <i class="ri-message-3-line"></i>
+        <i class="ri-global-line"></i>
+        <i class="ri-user-3-line"></i>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-300 px-4">
+      <ul class="flex flex-col gap-4 py-4">
+        <li><a href="index.html" class="block px-2 py-2 hover:bg-gray-100 rounded">Home</a></li>
+        <li><a href="biodata.html" class="block px-2 py-2 hover:bg-gray-100 rounded">About Me</a></li>
+        <li><a href="contact_us.html" class="block px-2 py-2 hover:bg-gray-100 rounded">Contact Us</a></li>
+        <li><a href="posts.html" class="block px-2 py-2 hover:bg-gray-100 rounded">Posts</a></li>
+        <li><a href="free_page.html" class="block px-2 py-2 hover:bg-gray-100 rounded">Free Page</a></li>
       </ul>
     </nav>
-
-    <div class="flex items-center gap-8 mx-3 ml-auto text-gray-600 text-xl">
-      <i class="ri-search-line"></i>
-      <i class="ri-message-3-line"></i>
-      <i class="ri-global-line"></i>
-      <i class="ri-user-3-line"></i>
-    </div>
   </header>
+
+  <script>
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 
   <div class="container mx-auto flex flex-col md:flex-row mt-10 gap-10 px-4 lg:flex-row">
 
@@ -66,7 +95,7 @@
       </div>
 
         <div class="basis-[45%] flex justify-center order-first md:order-0">
-          <img src="img/AIstock.jpg" class="max-w-full h-auto">
+          <img src="img/AIstock.jpg" class="max-w-full h-105">
         </div>
 
         <div class="basis-[15%] pl-0 md:pl-8 text-center md:text-left w-full">

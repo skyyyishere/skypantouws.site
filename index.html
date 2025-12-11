@@ -11,7 +11,7 @@
 
 <body>
   <header class="container mx-auto flex justify-start items-center border-b border-gray-300 h-12 py-2">
-    <a href="javascript:location.reload()" class="block">
+    <a href="index.html" class="block">
       <img src="img/Logo.png" alt="IBM Logo" class="h-20 w-auto px-4">
     </a>
 
@@ -19,10 +19,41 @@
 
     <nav class="hidden md:block ml-8">
       <ul class="flex gap-11">
-        <li>About Me</li>
-        <li>Contact Us</li>
-        <li>Posts</li>
-        <li>Free Page</li>
+
+        <li>
+          <a href="index.html"
+            class="px-2 py-3 hover:bg-gray-100 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="biodata.html"
+            class="px-2 py-3 hover:bg-gray-100 transition">
+            About Me
+          </a>
+        </li>
+
+        <li>
+          <a href="contact_us.html"
+            class="px-2 py-3 hover:bg-gray-100 transition">
+            Contact Us
+          </a>
+        </li>
+
+        <li>
+          <a href="posts.html"
+            class="px-2 py-3 hover:bg-gray-100 transition">
+            Posts
+          </a>
+        </li>
+
+        <li>
+          <a href="free_page.html"
+            class="px-2 py-3 hover:bg-gray-100 transition">
+            Free Page
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -48,14 +79,14 @@
       </p>
 
       <div class="flex gap-4">
-        <button onclick="location.reload()"
+        <button onclick="window.open('https://www.ibm.com/id-id/strategic-partnerships/aws?lnk=hpls1id', '_blank')"
         class="relative px-7 py-2 pr-24 bg-blue-600 text-white text-left
          hover:bg-blue-700">
           <span>Temukan bagaimana IBM dan AWS bekerja sama</span>
           <i class="ri-arrow-right-line text-lg absolute top-1.5 right-3.5"></i>
         </button>
 
-        <button onclick="location.reload()"
+        <button onclick="window.open('https://www.ibm.com/id-id/products/watsonx-orchestrate?lnk=hpls2id', '_blank')"
         class="group px-7 py-2 pr-24 bg-white-200 border border-blue-600 text-left
          hover:bg-blue-700">
           <span class="text-blue-700 group-hover:text-white">Jadikan agen AI Anda bekerja untuk Anda</span>
@@ -99,7 +130,7 @@
         </p>
     </div>
 
-    <button onclick="location.reload()"
+    <button onclick="window.open('https:https://www.ibm.com/account/reg/signup?formid=urx-54067&lnk=hppb4id', '_blank')"
     class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
         <span class="mr-2 group-hover:text-white">Unduh Panduannya</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
@@ -110,33 +141,37 @@
     <h5 class="font-medium mb-4">Direkomendasikan untuk Anda</h5>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
-      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+      <a href="biodata.html"
+        class="border border-gray-300 p-2 h-62 flex items-start gap-3 hover:bg-gray-100 transition cursor-pointer">
         <img src="img/Aboutme.png" alt="About Me" class="w-50 h-30 mb-2 mt-14 object-contain" alt="About Me">
         <p class="text-black mt-26">About Me</p>
 
         <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
-      </div>
+      </a>
 
-      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+      <a href="contact_us.html"
+        class="border border-gray-300 p-2 h-62 flex items-start gap-3 hover:bg-gray-100 transition cursor-pointer">
         <img src="img/Contactus.png" alt="Contact Us" class="w-50 h-18 mb-2 mt-20 object-contain" alt="Contact Us">
         <p class="text-black mt-26">Contact Us</p>
 
         <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
-      </div>
+      </a>
 
-      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+      <a href="posts.html"
+        class="border border-gray-300 p-2 h-62 flex items-start gap-3 hover:bg-gray-100 transition cursor-pointer">
         <img src="img/Posts.png" alt="Posts" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Posts">
         <p class="text-black mt-26">Posts</p>
 
         <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
-      </div>
+      </a>
 
-      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+      <a href="free_page.html"
+        class="border border-gray-300 p-2 h-62 flex items-start gap-3 hover:bg-gray-100 transition cursor-pointer">
         <img src="img/Freepage.png" alt="Free Page" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Free Page">
         <p class="text-black mt-26">Free Page</p>
 
         <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
-      </div>
+      </a>
     </div>
   </div>
 
@@ -150,7 +185,7 @@
         </p>
     </div>
 
-    <button onclick="location.reload()"
+    <button onclick="window.open('https://www.ibm.com/id-id/products/spss-statistics/whats-new?lnk=hppb1id', '_blank')"
     class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
         <span class="mr-2 group-hover:text-white">Dapatkan wawasan secara instan</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
@@ -161,7 +196,7 @@
     <h1 class="text-6xl font-light ml-14 mt-20 mb-12">Bisnis yang lebih cerdas. Dampak Nyata.</h1>
   </div>
 
-  <div class="flex gap-10 w-full px-14 pb-10">
+  <div class="flex gap-10 w-full px-14 pb-3">
     <div class="w-1/2 space-y-4">
 
       <div class="accordion-item border border-gray-300">
@@ -285,5 +320,293 @@
       document.getElementById("preview-image").src = images[index];
     }
   </script>
+
+  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
+    <img src="img/aws.jpg" alt="AWS" class="w-90 h-42 object-cover">
+
+    <div class="ml-6 flex-1">
+        <h5 class="font-medium">Merevolusi alur kerja Anda: IBM Watson Orchestrate di AWS</h5>
+        <p class="text-md mt-1 max-w-sm">
+            Ubah proses bisnis Anda dengan otomatisasi yang inovatif.
+        </p>
+    </div>
+
+    <button onclick="location.reload()"
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4">
+        <span class="mr-2 group-hover:text-white">Beli sekarang di AWS Marketplace</span>
+        <i class="ri-arrow-right-line group-hover:text-white"></i>
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ml-14 mt-20 mb-12">
+
+    <div>
+      <h1 class="text-6xl font-light">
+        Memimpin era AI dengan IBM
+      </h1>
+    </div>
+
+    <div class="flex items-center">
+      <p class="text-2xl leading-relaxed">
+        Dari AI generasi berikutnya hingga
+        <a href="javascript:location.reload()" class="text-blue-600 hover:underline">
+          perangkat lunak
+        </a>
+        mutakhir, keahlian mendalam kami di berbagai industri dapat membantu anda memperbarui cara kerja bisnis Anda di era AI.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="mx-5 mt-15">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Aboutme.png" alt="About Me" class="w-50 h-30 mb-2 mt-14 object-contain" alt="About Me">
+        <p class="mt-26">About Me</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Contactus.png" alt="Contact Us" class="w-50 h-18 mb-2 mt-20 object-contain" alt="Contact Us">
+        <p class="mt-26">Contact Us</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Posts.png" alt="Posts" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Posts">
+        <p class="mt-26">Posts</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Freepage.png" alt="Free Page" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Free Page">
+        <p class="mt-26">Free Page</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Aboutme.png" alt="About Me" class="w-50 h-30 mb-2 mt-14 object-contain" alt="About Me">
+        <p class="mt-26">About Me</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Contactus.png" alt="Contact Us" class="w-50 h-18 mb-2 mt-20 object-contain" alt="Contact Us">
+        <p class="mt-26">Contact Us</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Posts.png" alt="Posts" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Posts">
+        <p class="mt-26">Posts</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+
+      <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
+                transition duration-200 cursor-pointer
+                hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
+                hover:text-white">
+        <img src="img/Freepage.png" alt="Free Page" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Free Page">
+        <p class="mt-26">Free Page</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1
+                group-hover:text-white"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
+    <img src="img/aws2.png" alt="AWS" class="w-90 h-42 object-cover">
+
+    <div class="ml-6 flex-1">
+        <h5 class="font-medium">Statistik SPSS pada AWS di Indonesia</h5>
+        <p class="text-md mt-1 max-w-sm">
+            Buka analitik tingkat lanjut dengan kekuatan skalabilitas cloud dan ketersediaan lokal
+        </p>
+    </div>
+
+    <button onclick="location.reload()"
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4">
+        <span class="mr-2 group-hover:text-white">Beli sekarang di AWS Marketplace</span>
+        <i class="ri-arrow-right-line group-hover:text-white"></i>
+    </button>
+  </div>
+
+  <div class="w-full mt-8 mx-3 mb-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+
+      <div class="p-6">
+        <h1 class="text-6xl font-light leading-tight">
+          Di dalam IBM
+        </h1>
+      </div>
+
+      <div class="p-6 flex flex-col">
+        <h5 class="font-medium text-black">Perusahaan kami</h5>
+
+        <p class="text-black mb-6">
+          Jelajahi sejarah dan budaya IBM dalam menerapkan teknologi di dunia nyata.
+        </p>
+
+        <div class="mt-10">
+          <a href="https://www.ibm.com/id-id/about?lnk=hpii1id" target="_blank" class="flex items-center text-blue-600 hover:underline">
+            Tentang IBM
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+
+          <a href="https://www.ibm.com/id-id/history?lnk=hpii2id" target="_blank" class="flex items-center text-blue-600 hover:underline">
+            Sejarah kami
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="p-6 flex flex-col">
+        <h5 class="font-medium text-black">Inovasi kami</h5>
+
+        <p class="text-black mb-6">
+          Kunjungi lab IBM dan lihat hal yang tersedia untuk masa depan komputasi
+        </p>
+
+        <div class="mt-10">
+          <a href="https://research.ibm.com/?lnk=hpii3id" target="_blank" class="flex items-center text-blue-600 hover:underline">
+            IBM Riset
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+
+          <a href="https://www.ibm.com/quantum?lnk=hpii4id" target="_blank" class="flex items-center text-blue-600 hover:underline">
+            Komputasi quantum
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="p-6 flex flex-col">
+        <h5 class="font-medium text-black">Orang-orang kami</h5>
+
+        <p class="text-black mb-6">
+          Lihat apa yang dibutuhkan untuk menjadi IBMer, atau bangun keterampilan Anda dengan kursus pendidikan kami.
+        </p>
+
+        <div class="mt-2">
+          <a href="https://www.ibm.com/careers?lnk=hpii5id" target="_blank" class="flex items-center text-blue-600 hover:underline h-8">
+            Menjadi IBMer
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+
+          <a href="https://skillsbuild.org/?lnk=hpii6id" target="_blank" class="flex items-center text-blue-600 hover:underline h-8">
+            Mulai belajar
+            <i class="ri-arrow-right-line ml-1 text-blue-600"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </body>
+
+<footer class="h-full w-full bg-gray-950 text-white py-20 px-10">
+
+  <div class="flex flex-col lg:flex-row gap-16">
+
+    <div>
+      <img src="img/ibmwhite.png" class="h-34 w-auto mb-12 -mt-18" alt="IBM White Logo">
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 ml-30">
+
+      <div class="space-y-3">
+        <h5 class="font-semibold">Temukan</h5>
+        <p class="text-gray-400">Produk</p>
+        <p class="text-gray-400">Layanan konsultasi</p>
+        <p class="text-gray-400">Industri</p>
+        <p class="text-gray-400">Studi kasus</p>
+        <p class="text-gray-400">Pembiayaan</p>
+        <p class="text-gray-400">Riset</p>
+      </div>
+
+      <div class="space-y-3">
+        <h5 class="font-semibold">Hubungkan</h5>
+        <p class="text-gray-400">Mitra bisnis</p>
+        <p class="text-gray-400">Dokumentasi</p>
+        <p class="text-gray-400">Acara</p>
+        <p class="text-gray-400">Buletin</p>
+        <p class="text-gray-400">Dukungan</p>
+        <p class="text-gray-400">Komunitas TechXchange</p>
+      </div>
+
+      <div class="space-y-3">
+        <h5 class="font-semibold">Ikuti</h5>
+        <p class="text-gray-400">LinkedIn</p>
+        <p class="text-gray-400">X</p>
+        <p class="text-gray-400">Instagram</p>
+        <p class="text-gray-400">YouTube</p>
+        <p class="text-gray-400">Podcast</p>
+      </div>
+
+      <div class="space-y-3">
+        <h5 class="font-semibold">Tentang</h5>
+        <p class="text-gray-400">Ringkasan</p>
+        <p class="text-gray-400">Karier</p>
+        <p class="text-gray-400">Hubungan investor</p>
+        <p class="text-gray-400">Kepemimpinan</p>
+        <p class="text-gray-400">ASEAN Newsroom</p>
+        <p class="text-gray-400">Keamanan & privasi</p>
+        <p class="text-gray-400">Announcements</p>
+        <p class="text-gray-400">Reports</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mt-40 w-full h-px bg-gray-700 my-15"></div>
+
+  <div class="flex flex-col lg:flex-row justify-between text-gray-400 text-sm px-2">
+    <p>Hubungi IBM</p>
+    <p>Privasi</p>
+    <p>Ketentuan penggunaan</p>
+    <p>Aksesibilitas</p>
+    <p>Preferensi Kuki</p>
+  </div>
+
+</footer>
 </html>

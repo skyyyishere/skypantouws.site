@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sky: Hai, namaku Sky Pantouw</title>
-  </head>
 
-  <body>
-    <h1>Sky Bradley Pantouw</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <title>My Website</title>
+</head>
+
+<body>
+  <header class="container mx-auto flex justify-start items-center border-b border-gray-300 h-12 py-2">
+    <a href="javascript:location.reload()" class="block">
+      <img src="img/Logo.png" alt="IBM Logo" class="h-20 w-auto px-4">
+    </a>
+
+    <div class="h-6 border-l border-gray-300 mx-1"></div>
+
+    <nav class="hidden md:block ml-8">
+      <ul class="flex gap-11">
+        <li>About Me</li>
+        <li>Contact Us</li>
+        <li>Posts</li>
+        <li>Free Page</li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-8 mx-3 ml-auto text-gray-600 text-xl">
+      <i class="ri-search-line"></i>
+      <i class="ri-message-3-line"></i>
+      <i class="ri-global-line"></i>
+      <i class="ri-user-3-line"></i>
+    </div>
+  </header>
+
+  <div class="container mx-auto flex mt-10">
+
+    <div class="basis-[40%] px-10">
+      <h1 class="text-6xl font-light mb-36 leading-[1.2]
+      bg-linear-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">
+        Mencapai potensi AI secara maksimal
+      </h1>
+
+      <p class="text-black text-xl mb-8">
+        Manfaatkan keahlian IBM dan AWS untuk memanfaatkan AI agensi
+        yang dapat diskalakan bersama Anda. Mari ciptakan bisnis yang lebih cerdas.
+      </p>
+
+      <div class="flex gap-4">
+        <button onclick="location.reload()"
+        class="relative px-7 py-2 pr-24 bg-blue-600 text-white text-left
+         hover:bg-blue-700">
+          <span>Temukan bagaimana IBM dan AWS bekerja sama</span>
+          <i class="ri-arrow-right-line text-lg absolute top-1.5 right-3.5"></i>
+        </button>
+
+        <button onclick="location.reload()"
+        class="group px-7 py-2 pr-24 bg-white-200 border border-blue-600 text-left
+         hover:bg-blue-700">
+          <span class="text-blue-700 group-hover:text-white">Jadikan agen AI Anda bekerja untuk Anda</span>
+        </button>
+      </div>
+
+      </div>
+
+        <div class="basis-[45%] flex justify-center">
+          <img src="img/AIstock.jpg" class="w-full h-105">
+        </div>
+
+        <div class="basis-[15%] pl-8">
+          <h5 class="font-bold pb-12">
+            Kunjungi
+          </h5>
+
+            <ul class="space-y-8 text-md text-blue-600">
+              <li class="relative pl-1 pb-5 pt-8 pr-6 border-b border-gray-300 flex flex-col justify-between w-full">
+                <a href="https://fti.unai.edu" target="_blank" class="hover:underline">Website Resmi FTI UNAI</a>
+                <i class="ri-arrow-right-line text-sm self-end"></i>
+              </li>
+
+              <li class="relative pl-1 pb-5 pt-8 pr-6 border-b border-gray-300 flex flex-col justify-between w-full">
+                <a href="https://unai.edu" target="_blank" class="hover:underline">Website Resmi UNAI</a>
+                <i class="ri-arrow-right-line text-sm self-end"></i>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
+    <img src="img/flyer.png" alt="Flyer" class="w-97 h-42 object-cover ml-2">
+
+    <div class="ml-6 flex-1">
+        <h5 class="font-medium">Mulailah Mewujudkan ROI dengan Agen AI</h5>
+        <p class="text-md mt-1 max-w-sm">
+            Dapatkan wawasan praktis untuk mempercepat hasil bisnis dengan otomatisasi bertenaga AI.
+        </p>
+    </div>
+
+    <button onclick="location.reload()"
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
+        <span class="mr-2 group-hover:text-white">Unduh Panduannya</span>
+        <i class="ri-arrow-right-line group-hover:text-white"></i>
+    </button>
+  </div>
+
+  <div class="mx-10 mt-10">
+    <h5 class="font-medium mb-4">Direkomendasikan untuk Anda</h5>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
+      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+        <img src="img/Aboutme.png" alt="About Me" class="w-50 h-30 mb-2 mt-14 object-contain" alt="About Me">
+        <p class="text-black mt-26">About Me</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
+      </div>
+
+      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+        <img src="img/Contactus.png" alt="Contact Us" class="w-50 h-18 mb-2 mt-20 object-contain" alt="Contact Us">
+        <p class="text-black mt-26">Contact Us</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
+      </div>
+
+      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+        <img src="img/Posts.png" alt="Posts" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Posts">
+        <p class="text-black mt-26">Posts</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
+      </div>
+
+      <div class="border border-gray-300 p-2 h-62 flex items-start gap-3">
+        <img src="img/Freepage.png" alt="Free Page" class="w-50 h-30 mb-2 mt-14 object-contain" alt="Free Page">
+        <p class="text-black mt-26">Free Page</p>
+
+        <i class="ri-arrow-right-line text-blue-600 text-xl self-end mb-1"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
+    <img src="img/Aineuroscience.png" alt="AI Neuroscience" class="w-90 h-42 object-cover">
+
+    <div class="ml-6 flex-1">
+        <h5 class="font-medium">Tak perlu lagi menebak-nebak! Biarkan AI menjelaskan hasil statistik Anda.</h5>
+        <p class="text-md mt-1 max-w-sm">
+            SPSS Statistics v31.1 kini disempurnakan dengan kemampuan AI untuk pertama kalinya.
+        </p>
+    </div>
+
+    <button onclick="location.reload()"
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
+        <span class="mr-2 group-hover:text-white">Dapatkan wawasan secara instan</span>
+        <i class="ri-arrow-right-line group-hover:text-white"></i>
+    </button>
+  </div>
+
+  <div>
+    <h1 class="text-6xl font-light ml-14 mt-20 mb-12">Bisnis yang lebih cerdas. Dampak Nyata.</h1>
+  </div>
+
+  <div class="flex gap-10 w-full px-14 pb-10">
+    <div class="w-1/2 space-y-4">
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(0)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-0" class="w-1 h-6 bg-blue-600 hidden"></span>
+            API Holdings
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-0" class="hidden px-4 pb-4 text-black">
+          API Holdings meningkatkan keandalan layanan kesehatan dengan IBM Instana
+        </div>
+      </div>
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(1)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-1" class="w-1 h-6 bg-blue-600 hidden"></span>
+            LPS
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-1" class="hidden px-4 pb-4 text-black">
+          Mendorong ketahanan aplikasi di perusahaan perkotaan dengan observabilitas AI
+        </div>
+      </div>
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(2)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-2" class="w-1 h-6 bg-blue-600 hidden"></span>
+            SkyeGrid
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-2" class="hidden px-4 pb-4 text-black">
+          Skyegrid membutuhkan platform cloud yang kuat yang dapat diskalakan untuk memenuhi pertumbuhan jumlah pelanggan
+        </div>
+      </div>
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(3)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-3" class="w-1 h-6 bg-blue-600 hidden"></span>
+            Far East Organization
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-3" class="hidden px-4 pb-4 text-black">
+          Mendorong Transformasi Digital di Sektor Real Estat dengan IBM Consulting
+        </div>
+      </div>
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(4)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-4" class="w-1 h-6 bg-blue-600 hidden"></span>
+            EMC and IBM
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-4" class="hidden px-4 pb-4 text-black">
+          Memastikan Nol Waktu Henti untuk Pasar Energi Singapura dengan IBM Power10
+        </div>
+      </div>
+
+      <div class="accordion-item border border-gray-300">
+        <button onclick="toggleItem(5)" 
+          class="w-full flex justify-between items-center p-4 text-left">
+          <span class="text-xl font-medium flex items-center gap-3">
+            <span id="line-5" class="w-1 h-6 bg-blue-600 hidden"></span>
+            DI Square
+          </span>
+          <i class="ri-arrow-down-s-line text-2xl"></i>
+        </button>
+
+        <div id="content-5" class="hidden px-4 pb-4 text-black">
+          Transformasi Layanan Pelanggan Melalui Inovasi AI Generatif
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-1/2">
+      <img id="preview-image" src="img/default.png" 
+           class="w-full h-full object-cover border border-gray-300">
+    </div>
+
+  </div>
+
+  <script>
+    const images = [
+      "img/api.png",
+      "img/lps.png",
+      "img/skyegrid.png",
+      "img/fareast.png",
+      "img/emc.png",
+      "img/disquare.png"
+    ];
+
+    function toggleItem(index) {
+      for (let i = 0; i < 6; i++) {
+        document.getElementById(`content-${i}`).classList.add("hidden");
+        document.getElementById(`line-${i}`).classList.add("hidden");
+      }
+
+      document.getElementById(`content-${index}`).classList.remove("hidden");
+      document.getElementById(`line-${index}`).classList.remove("hidden");
+
+      document.getElementById("preview-image").src = images[index];
+    }
+  </script>
+</body>
 </html>

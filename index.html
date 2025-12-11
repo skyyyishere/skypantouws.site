@@ -12,48 +12,18 @@
 <body>
   <header class="container mx-auto flex justify-start items-center border-b border-gray-300 h-12 py-2">
     <a href="index.html" class="block">
-      <img src="img/Logo.png" alt="IBM Logo" class="h-20 w-auto px-4">
+      <img src="img/Logo.png" alt="IBM Logo" class="h-16 w-auto px-4 md:h-20">
     </a>
 
-    <div class="h-6 border-l border-gray-300 mx-1"></div>
+    <div class="hidden md:block h-6 border-l border-gray-300 mx-1"></div>
 
     <nav class="hidden md:block ml-8">
       <ul class="flex gap-11">
-
-        <li>
-          <a href="index.html"
-            class="px-2 py-3 hover:bg-gray-100 transition">
-            Home
-          </a>
-        </li>
-
-        <li>
-          <a href="biodata.html"
-            class="px-2 py-3 hover:bg-gray-100 transition">
-            About Me
-          </a>
-        </li>
-
-        <li>
-          <a href="contact_us.html"
-            class="px-2 py-3 hover:bg-gray-100 transition">
-            Contact Us
-          </a>
-        </li>
-
-        <li>
-          <a href="posts.html"
-            class="px-2 py-3 hover:bg-gray-100 transition">
-            Posts
-          </a>
-        </li>
-
-        <li>
-          <a href="free_page.html"
-            class="px-2 py-3 hover:bg-gray-100 transition">
-            Free Page
-          </a>
-        </li>
+        <li><a href="index.html" class="px-2 py-3 hover:bg-gray-100">Home</a></li>
+        <li><a href="biodata.html" class="px-2 py-3 hover:bg-gray-100">About Me</a></li>
+        <li><a href="contact_us.html" class="px-2 py-3 hover:bg-gray-100">Contact Us</a></li>
+        <li><a href="posts.html" class="px-2 py-3 hover:bg-gray-100">Posts</a></li>
+        <li><a href="free_page.html" class="px-2 py-3 hover:bg-gray-100">Free Page</a></li>
       </ul>
     </nav>
 
@@ -65,9 +35,9 @@
     </div>
   </header>
 
-  <div class="container mx-auto flex mt-10">
+  <div class="container mx-auto flex flex-col md:flex-row mt-10 gap-10 px-4 lg:flex-row">
 
-    <div class="basis-[40%] px-10">
+    <div class="basis-[40%] px-2 md:px-10 text-center md:text-left">
       <h1 class="text-6xl font-light mb-36 leading-[1.2]
       bg-linear-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">
         Mencapai potensi AI secara maksimal
@@ -95,11 +65,11 @@
 
       </div>
 
-        <div class="basis-[45%] flex justify-center">
+        <div class="basis-[45%] flex justify-center order-first md:order-0">
           <img src="img/AIstock.jpg" class="w-full h-105">
         </div>
 
-        <div class="basis-[15%] pl-8">
+        <div class="basis-[15%] pl-0 md:pl-8 text-center md:text-left w-full">
           <h5 class="font-bold pb-12">
             Kunjungi
           </h5>
@@ -120,8 +90,9 @@
     </div>
   </div>
 
-  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
-    <img src="img/flyer.png" alt="Flyer" class="w-97 h-42 object-cover ml-2">
+  <div class="bg-purple-200 mx-5 mt-15 mb-8 overflow-hidden 
+      flex flex-col md:flex-row items-center justify-between py-5 md:h-32">
+    <img src="img/flyer.png" alt="Flyer" class="w-52 h-32 object-cover md:w-90 md:h-42">
 
     <div class="ml-6 flex-1">
         <h5 class="font-medium">Mulailah Mewujudkan ROI dengan Agen AI</h5>
@@ -131,7 +102,7 @@
     </div>
 
     <button onclick="window.open('https:https://www.ibm.com/account/reg/signup?formid=urx-54067&lnk=hppb4id', '_blank')"
-    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 md:w-80 md:mt-0 mr-4 mb-6">
         <span class="mr-2 group-hover:text-white">Unduh Panduannya</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
     </button>
@@ -140,7 +111,7 @@
   <div class="mx-10 mt-10">
     <h5 class="font-medium mb-4">Direkomendasikan untuk Anda</h5>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5 px-4">
       <a href="biodata.html"
         class="border border-gray-300 p-2 h-62 flex items-start gap-3 hover:bg-gray-100 transition cursor-pointer">
         <img src="img/Aboutme.png" alt="About Me" class="w-50 h-30 mb-2 mt-14 object-contain" alt="About Me">
@@ -175,8 +146,9 @@
     </div>
   </div>
 
-  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
-    <img src="img/Aineuroscience.png" alt="AI Neuroscience" class="w-90 h-42 object-cover">
+  <div class="bg-purple-200 mx-5 mt-15 mb-8 overflow-hidden 
+      flex flex-col md:flex-row items-center justify-between py-5 md:h-32">
+    <img src="img/Aineuroscience.png" alt="AI Neuroscience" class="w-52 h-32 object-cover md:w-90 md:h-42">
 
     <div class="ml-6 flex-1">
         <h5 class="font-medium">Tak perlu lagi menebak-nebak! Biarkan AI menjelaskan hasil statistik Anda.</h5>
@@ -186,7 +158,7 @@
     </div>
 
     <button onclick="window.open('https://www.ibm.com/id-id/products/spss-statistics/whats-new?lnk=hppb1id', '_blank')"
-    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4 mb-6">
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 md:w-80 md:mt-0 mr-4 mb-6">
         <span class="mr-2 group-hover:text-white">Dapatkan wawasan secara instan</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
     </button>
@@ -321,8 +293,9 @@
     }
   </script>
 
-  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
-    <img src="img/aws.jpg" alt="AWS" class="w-90 h-42 object-cover">
+  <div class="bg-purple-200 mx-5 mt-15 mb-8 overflow-hidden 
+      flex flex-col md:flex-row items-center justify-between py-5 md:h-32">
+    <img src="img/aws.jpg" alt="AWS" class="w-52 h-32 object-cover md:w-90 md:h-42">
 
     <div class="ml-6 flex-1">
         <h5 class="font-medium">Merevolusi alur kerja Anda: IBM Watson Orchestrate di AWS</h5>
@@ -332,13 +305,13 @@
     </div>
 
     <button onclick="location.reload()"
-    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4">
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 md:w-80 md:mt-0 mr-4">
         <span class="mr-2 group-hover:text-white">Beli sekarang di AWS Marketplace</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
     </button>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 ml-14 mt-20 mb-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 ml-14 mt-20 mb-12">
 
     <div>
       <h1 class="text-6xl font-light">
@@ -360,7 +333,7 @@
 
   <div class="mx-5 mt-15">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full mt-8 mx-3 px-4 mb-5">
       <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
                 transition duration-200 cursor-pointer
                 hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
@@ -406,7 +379,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full mt-8 mx-3 mb-10 px-4">
       <div class="group border border-gray-300 p-2 h-55 flex items-start gap-3 
                 transition duration-200 cursor-pointer
                 hover:bg-linear-to-b hover:from-blue-600 hover:to-green-500
@@ -453,8 +426,9 @@
     </div>
   </div>
 
-  <div class="bg-purple-200 mx-5 h-32 mt-15 mb-8 overflow-hidden flex items-center justify-between">
-    <img src="img/aws2.png" alt="AWS" class="w-90 h-42 object-cover">
+  <div class="bg-purple-200 mx-5 mt-15 mb-8 overflow-hidden 
+      flex flex-col md:flex-row items-center justify-between py-5 md:h-32">
+    <img src="img/aws2.png" alt="AWS" class="w-52 h-32 object-cover md:w-90 md:h-42">
 
     <div class="ml-6 flex-1">
         <h5 class="font-medium">Statistik SPSS pada AWS di Indonesia</h5>
@@ -464,14 +438,14 @@
     </div>
 
     <button onclick="location.reload()"
-    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 mr-4">
+    class="group flex justify-between items-center px-6 py-2 border border-blue-600 text-blue-600 font-sm hover:bg-blue-700 transition w-80 md:w-80 md:mt-0 mr-4">
         <span class="mr-2 group-hover:text-white">Beli sekarang di AWS Marketplace</span>
         <i class="ri-arrow-right-line group-hover:text-white"></i>
     </button>
   </div>
 
   <div class="w-full mt-8 mx-3 mb-10">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full mt-8 mx-3 mb-10 px-4">
 
       <div class="p-6">
         <h1 class="text-6xl font-light leading-tight">
@@ -549,10 +523,10 @@
   <div class="flex flex-col lg:flex-row gap-16">
 
     <div>
-      <img src="img/ibmwhite.png" class="h-34 w-auto mb-12 -mt-18" alt="IBM White Logo">
+      <img src="img/ibmwhite.png" class="h-34 w-auto mb-12 -mt-18 sm:h-" alt="IBM White Logo">
     </div>
 
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 ml-30">
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 ml-30">
 
       <div class="space-y-3">
         <h5 class="font-semibold">Temukan</h5>
@@ -600,7 +574,7 @@
 
   <div class="mt-40 w-full h-px bg-gray-700 my-15"></div>
 
-  <div class="flex flex-col lg:flex-row justify-between text-gray-400 text-sm px-2">
+  <div class="flex flex-col sm:flex-row sm:flex-wrap sm:gap-5 sm:justify-between sm:text-left lg:flex-row justify-between text-gray-400 text-sm px-2">
     <p>Hubungi IBM</p>
     <p>Privasi</p>
     <p>Ketentuan penggunaan</p>

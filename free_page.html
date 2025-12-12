@@ -45,23 +45,8 @@
             background: black;
             z-index: -2;
         }
-
-        .hover-card.expanded {
-          max-height: 1000px !important;
-        }
-        .hover-card.expanded .show-on-hover {
-          opacity: 1 !important;
-        }
     </style>
 </head>
-
-<script>
-document.querySelectorAll(".hover-card").forEach(card => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("expanded");
-  });
-});
-</script>
 
 <body class="relative min-h-screen pokeball-bg">
 
@@ -131,7 +116,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <img src="freepage/lucario_sprite.jpg" alt="Lucario" class="w-full rounded-xl mb-4">
 
-          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 show-on-hover">
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             Lucario
           </h3>
 
@@ -163,7 +148,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <img src="freepage/garchomp_sprite.png" alt="Garchomp" class="w-full rounded-xl mb-4">
 
-          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 show-on-hover">
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             Garchomp
           </h3>
 
@@ -195,7 +180,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <img src="freepage/gengar_sprite.jpg" alt="Gengar" class="w-full rounded-xl mb-4">
 
-          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 show-on-hover">
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
             Gengar
           </h3>
 
@@ -234,7 +219,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
 
-            <h3 class="text-6xl font-bold mt-6 show-on-hover">Dragon</h3>
+            <h3 class="text-6xl font-bold mt-6">Dragon</h3>
 
             <p class="mt-4 text-lg">Powerful, majestic, and dominant in battle.</p>
 
@@ -254,7 +239,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
 
-            <h3 class="text-6xl font-bold mt-6 show-on-hover">Electric</h3>
+            <h3 class="text-6xl font-bold mt-6">Electric</h3>
 
             <p class="mt-4 text-lg">Fast, energetic, and strikes in an instant.</p>
 
@@ -274,7 +259,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
 
-            <h3 class="text-6xl font-bold mt-6 show-on-hover">Fighting</h3>
+            <h3 class="text-6xl font-bold mt-6">Fighting</h3>
 
             <p class="mt-4 text-lg">Strong, focused, and unstoppable in close combat.</p>
 
@@ -305,7 +290,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
 
-            <h3 class="text-6xl font-bold mb-4 show-on-hover">Kanto</h3>
+            <h3 class="text-6xl font-bold mb-4">Kanto</h3>
 
             <p class="mb-6">
               The classic region where everything began — full of nostalgia and iconic adventures.
@@ -331,7 +316,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
 
-            <h3 class="text-6xl font-bold mb-4 show-on-hover">Sinnoh</h3>
+            <h3 class="text-6xl font-bold mb-4">Sinnoh</h3>
 
             <p class="mb-6">
               A region known for deep stories, mythical legends, and powerful evolutions.
@@ -357,7 +342,7 @@ document.querySelectorAll(".hover-card").forEach(card => {
 
           <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
 
-            <h3 class="text-6xl font-bold mb-4 show-on-hover">Kalos</h3>
+            <h3 class="text-6xl font-bold mb-4">Kalos</h3>
 
             <p class="mb-6">
               A stylish region known for beauty, innovation, and the rise of Mega Evolution.

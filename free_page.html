@@ -6,11 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <title>About Me</title>
+    <title>Free Page</title>
+
+    <style>
+
+        body.pokeball-bg {
+            position: relative;
+        }
+
+        body.pokeball-bg::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: #ef4444;
+            z-index: -3;
+        }
+
+        body.pokeball-bg::after {
+            content: "";
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: white;
+            z-index: -3;
+        }
+
+        .pokeball-line {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 14px;
+            background: black;
+            z-index: -2;
+        }
+    </style>
 </head>
 
-<body>
-  <header class="border-b border-gray-300">
+<body class="relative min-h-screen pokeball-bg">
+
+  <div class="pokeball-line"></div>
+
+  <header class="border-b border-gray-300 relative z-20 bg-white">
     <div class="md:hidden flex justify-between items-center px-4 py-2 bg-white">
       <a href="index.html">
         <img src="img/Logo.png" alt="IBM Logo" class="h-12 w-auto">
@@ -20,7 +62,7 @@
       </button>
     </div>
 
-    <div class="hidden md:flex justify-start items-center container mx-auto h-12 py-2">
+    <div class="hidden md:flex justify-start items-center container mx-auto h-12 py-2 bg-white">
       <a href="index.html" class="block">
         <img src="img/Logo.png" alt="IBM Logo" class="h-16 w-auto md:h-20 px-4">
       </a>
@@ -55,5 +97,271 @@
       </ul>
     </nav>
   </header>
+
+  <section class="max-w-6xl mx-auto px-4 py-12 relative z-10">
+
+    <h1 class="text-4xl font-bold text-center mb-10">My Pokémon Hobby Page</h1>
+
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-left mb-6">Top 3 Favorite Pokémon</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+  
+        <div class="bg-white p-6 rounded-2xl shadow transition-all duration-500 overflow-hidden relative max-h-64 hover:max-h-[1000px] group border border-black">
+
+          <h2 class="absolute top-4 left-1/2 -translate-x-1/2 text-4xl font-extrabold text-black/80
+                    opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+            Lucario
+          </h2>
+
+          <img src="freepage/lucario_sprite.jpg" alt="Lucario" class="w-full rounded-xl mb-4">
+
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Lucario
+          </h3>
+
+          <p class="text-gray-600 mb-4 mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Cool design, strong aura powers, fast and balanced fighter.
+          </p>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-500">
+
+            <img src="freepage/lucario.png" alt="Lucario" class="w-full rounded-xl mb-4">
+
+            <h4 class="font-bold text-lg mb-2 underline"><a href="https://id.portal-pokemon.com/play/pokedex/0448" target="_blank">Pokédex Entry</a></h4>
+            <p class="text-gray-700 mb-4">
+              Lucario can sense and manipulate aura. It's loyal, fast, and incredibly skilled in battle.
+            </p>
+
+            <h4 class="font-bold text-lg mb-2">Type</h4>
+            <p class="text-blue-600 mb-4">Fighting / Steel</p>
+
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow transition-all duration-500 overflow-hidden relative max-h-64 hover:max-h-[1000px] group border border-black">
+
+          <h2 class="absolute top-4 left-1/2 -translate-x-1/2 text-4xl font-extrabold text-black/80
+                    opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+            Garchomp
+          </h2>
+
+          <img src="freepage/garchomp_sprite.png" alt="Garchomp" class="w-full rounded-xl mb-4">
+
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Garchomp
+          </h3>
+
+          <p class="text-gray-600 mb-4 mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Fast, powerful, and looks like a dragon jet — unbeatable combo.
+          </p>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-500">
+
+            <img src="freepage/garchomp.png" alt="Garchomp" class="w-full rounded-xl mb-4">
+
+            <h4 class="font-bold text-lg mb-2 underline"><a href="https://id.portal-pokemon.com/play/pokedex/0445" target="_blank">Pokédex Entry</a></h4>
+            <p class="text-gray-700 mb-4">
+              Garchomp is a jet-shaped dragon that's extremely fast and powerful.
+            </p>
+
+            <h4 class="font-bold text-lg mb-2">Type</h4>
+            <p class="text-blue-600 mb-4">Dragon / Ground</p>
+
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow transition-all duration-500 overflow-hidden relative max-h-64 hover:max-h-[1000px] group border border-black">
+
+          <h2 class="absolute top-4 left-1/2 -translate-x-1/2 text-4xl font-extrabold text-black/80
+                    opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
+            Gengar
+          </h2>
+
+          <img src="freepage/gengar_sprite.jpg" alt="Gengar" class="w-full rounded-xl mb-4">
+
+          <h3 class="text-6xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Gengar
+          </h3>
+
+          <p class="text-gray-600 mb-2 mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            Sinister shadow that strikes fast and laughs in the dark.
+          </p>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-all duration-500">
+
+            <img src="freepage/gengar.png" alt="Gengar" class="w-full rounded-xl mb-1">
+
+            <h4 class="font-bold text-lg mb-2 underline"><a href="https://id.portal-pokemon.com/play/pokedex/0094" target="_blank">Pokédex Entry</a></h4>
+            <p class="text-gray-700 mb-4">
+              Gengar is a shadow-dwelling ghost that grins in the dark, striking with eerie speed and terrifying power.
+            </p>
+
+            <h4 class="font-bold text-lg mb-2">Type</h4>
+            <p class="text-blue-600 mb-4">Ghost / Poison</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 px-6 mb-20">
+      <h2 class="text-3xl font-bold text-left mb-10">Favorite Pokémon Types</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="group bg-purple-700 text-white rounded-2xl shadow-xl overflow-hidden 
+                    transition-all duration-500 max-h-48 hover:max-h-[900px] p-6">
+
+          <div class="flex justify-center mb-4">
+            <img src="freepage/dragontype.png" class="w-16 h-16 rounded-full">
+          </div>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
+
+            <h3 class="text-6xl font-bold mt-6">Dragon</h3>
+
+            <p class="mt-4 text-lg">Powerful, majestic, and dominant in battle.</p>
+
+            <div class="flex justify-center gap-6 mt-8">
+              <img src="freepage/haxorus.png" alt="Haxorus" class="w-32 h-32 object-contain">
+              <img src="freepage/rayquaza.png" alt="Rayquaza" class="w-32 h-32 object-contain">
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-yellow-500 text-white rounded-2xl shadow-xl overflow-hidden 
+                    transition-all duration-500 max-h-48 hover:max-h-[900px] p-6">
+
+          <div class="flex justify-center mb-4">
+            <img src="freepage/electrictype.png" class="w-16 h-16 rounded-full">
+          </div>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
+
+            <h3 class="text-6xl font-bold mt-6">Electric</h3>
+
+            <p class="mt-4 text-lg">Fast, energetic, and strikes in an instant.</p>
+
+            <div class="flex justify-center gap-6 mt-8">
+              <img src="freepage/pikachu.png" alt="Pikachu" class="w-32 h-32 object-contain">
+              <img src="freepage/zeraora.png" alt="Zeraora" class="w-32 h-32 object-contain">
+            </div>
+          </div>
+        </div>
+
+        <div class="group bg-red-600 text-white rounded-2xl shadow-xl overflow-hidden 
+                    transition-all duration-500 max-h-48 hover:max-h-[900px] p-6">
+
+          <div class="flex justify-center mb-4">
+            <img src="freepage/fightingtype.png" class="w-16 h-16 rounded-full">
+          </div>
+
+          <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
+
+            <h3 class="text-6xl font-bold mt-6">Fighting</h3>
+
+            <p class="mt-4 text-lg">Strong, focused, and unstoppable in close combat.</p>
+
+            <div class="flex justify-center gap-6 mt-8">
+              <img src="freepage/urshifu.png" alt="Urshifu" class="w-32 h-32 object-contain">
+              <img src="freepage/machamp.png" alt="Machamp" class="w-32 h-32 object-contain">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Top 3 Favorite Generations</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <a href="https://bulbapedia.bulbagarden.net/wiki/Kanto" target="_blank"
+          class="block relative bg-white rounded-2xl shadow overflow-hidden
+                  transition-all duration-500 max-h-64 hover:max-h-[900px]
+                  border-2 border-transparent hover:border-red-400 group">
+
+          <img src="freepage/kanto.jpg"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-40">
+
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+          <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
+
+            <h3 class="text-6xl font-bold mb-4">Kanto</h3>
+
+            <p class="mb-6">
+              The classic region where everything began — full of nostalgia and iconic adventures.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mx-auto max-w-xs">
+              <img src="freepage/charizard.png" class="rounded-xl shadow">
+              <img src="freepage/pikachu.png" class="rounded-xl shadow">
+            </div>
+
+          </div>
+        </a>
+
+        <a href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh" target="_blank"
+          class="block relative bg-white rounded-2xl shadow overflow-hidden
+                  transition-all duration-500 max-h-64 hover:max-h-[900px]
+                  border-2 border-transparent hover:border-blue-400 group">
+
+          <img src="freepage/sinnoh.png"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-40">
+
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+          <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
+
+            <h3 class="text-6xl font-bold mb-4">Sinnoh</h3>
+
+            <p class="mb-6">
+              A region known for deep stories, mythical legends, and powerful evolutions.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mx-auto max-w-xs">
+              <img src="freepage/lucario.png" class="rounded-xl shadow">
+              <img src="freepage/garchomp.png" class="rounded-xl shadow">
+            </div>
+
+          </div>
+        </a>
+
+        <a href="https://bulbapedia.bulbagarden.net/wiki/Kalos" target="_blank"
+          class="block relative bg-white rounded-2xl shadow overflow-hidden
+                  transition-all duration-500 max-h-64 hover:max-h-[900px]
+                  border-2 border-transparent hover:border-purple-400 group">
+
+          <img src="freepage/kalos.png"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-40">
+
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+
+          <div class="relative opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-8 text-white">
+
+            <h3 class="text-6xl font-bold mb-4">Kalos</h3>
+
+            <p class="mb-6">
+              A stylish region known for beauty, innovation, and the rise of Mega Evolution.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4 mx-auto max-w-xs">
+              <img src="freepage/greninja.png" class="rounded-xl shadow">
+              <img src="freepage/sylveon.png" class="rounded-xl shadow">
+            </div>
+
+          </div>
+        </a>
+
+      </div>
+    </section>
+  </section>
 </body>
+
+<footer class="text-center text-gray-500 py-8">
+  &copy; 2025 Pokémon Hobby Page
+</footer>
 </html>
